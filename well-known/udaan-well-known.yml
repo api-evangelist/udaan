@@ -1,0 +1,59 @@
+generated: '2026-07-21'
+method: searched
+hosts:
+  - host: https://udaan.com
+    note: >-
+      udaan.com is a single-page app with a catch-all route that returns
+      HTTP 200 with the HTML app shell (content-type text/html) for any
+      path, including /.well-known/* and /llms.txt. None of the documents
+      below are genuinely published; the 200s are SPA fallbacks, verified
+      by inspecting the response bodies.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        content_type: text/html
+        spa_catch_all: true
+        published: false
+      - path: /.well-known/openid-configuration
+        status: 200
+        content_type: text/html
+        spa_catch_all: true
+        published: false
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        content_type: text/html
+        spa_catch_all: true
+        published: false
+      - path: /.well-known/api-catalog
+        status: 200
+        content_type: text/html
+        spa_catch_all: true
+        published: false
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        content_type: text/html
+        spa_catch_all: true
+        published: false
+      - path: /llms.txt
+        status: 200
+        content_type: text/html
+        spa_catch_all: true
+        published: false
+  - host: https://api.udaan.com
+    note: >-
+      Backend API host used by the udaan.com web/mobile apps (preconnect
+      target in the homepage). Not a public developer API; every probed
+      path returns 404 application/json.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        published: false
+      - path: /.well-known/openid-configuration
+        status: 404
+        published: false
+      - path: /openapi.json
+        status: 404
+        published: false
+      - path: /swagger
+        status: 404
+        published: false

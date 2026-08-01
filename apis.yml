@@ -1,8 +1,25 @@
 aid: udaan
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/udaan.png
 name: Udaan
-description: 'Udaan is a company surfaced as a portfolio company of ggv-capital, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: marketplace. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Udaan is India''s largest eB2B trade platform, connecting small businesses
+  - kirana stores, chemists, hotels, restaurants, and offices - with manufacturers, brands,
+  and wholesalers across categories including FMCG, staples, fruits and vegetables, pharma,
+  and general merchandise. The platform combines supply chain and logistics operations with
+  financial services for small businesses through udaanCapital, its working-capital fintech
+  arm. Udaan is backed by Lightspeed Venture Partners and GGV Capital. It publishes no public
+  developer API; buyer and seller experiences are delivered through its web and mobile apps,
+  with api.udaan.com serving as the private app backend.'
 url: https://raw.githubusercontent.com/api-evangelist/udaan/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +28,23 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Marketplace
+- B2B
+- eCommerce
+- Wholesale
+- Retail
+- India
+- Supply Chain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +52,21 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/udaan-domain-security.yml
 - type: Website
   url: https://udaan.com/
+- type: Packages
+  url: packages/udaan-packages.yml
+- type: LLMsTxt
+  url: llms/udaan-llms.txt
+- type: Blog
+  url: https://medium.com/engineering-udaan
+- type: GitHubOrganization
+  url: https://github.com/udaan-com
+- type: Support
+  url: https://udaan.com/contact-us
+- type: PrivacyPolicy
+  url: https://udaan.com/privacy
+- type: TermsOfService
+  url: https://udaan.com/s/terms-of-use

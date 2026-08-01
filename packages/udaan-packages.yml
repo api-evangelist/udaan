@@ -1,0 +1,13 @@
+generated: '2026-07-21'
+method: searched
+source: registry probes (npm search, PyPI) + github.com/udaan-com + udaan.com
+packages: []
+notes: >-
+  No first-party client libraries found. Registries probed: npm
+  (registry.npmjs.org search "udaan" — only react-native-photo-view-udaan, an
+  individual's fork of a photo-view component, not an API client) and PyPI
+  (pypi.org/project/udaan is an unrelated quadrotor dynamics package by a
+  third party). The udaan-com GitHub org (33 public repos) publishes internal
+  engineering/open-source tooling (snorql, detekt-sidekt, service-scaler,
+  r2dbi) and forks, but no API SDKs. Udaan publishes no public developer API,
+  so the absence of SDK packages is expected.
